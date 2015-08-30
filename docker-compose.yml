@@ -1,0 +1,8 @@
+duplicity:
+    build: ./duplicity
+    environment:
+        CRON_PATTERN: '* * * * *'
+        PARAMS_CLEAN: 'remove-older-than 1Y --force'
+        PARAMS: '--no-encryption --allow-source-mismatch --full-if-older-than 1W'
+        #SRC: '/var/lib/mysql'
+        #DEST: 'file:///backup/mysql'

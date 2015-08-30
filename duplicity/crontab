@@ -1,0 +1,1 @@
+###CRON_PATTERN### root bash /backup.sh >> /var/log/cron.log 2>&1
