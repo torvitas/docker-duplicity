@@ -12,7 +12,7 @@ while read line; do
 done < /root/env
 
 # Do the backup
-duplicity $PARAMS --exclude "**" $SRC $DEST
+duplicity $PARAMS $SRC $DEST
 
 # Do the clean up
 duplicity $PARAMS_CLEAN $DEST
